@@ -59,6 +59,8 @@ export default function App() {
         <button onClick={()=> setMirrored(!mirrored)}>{'>|<'}</button>
         <button onClick={capture}>Capturar</button>
       </div>
+
+      <span >Made by Darlan Schwartz <a target='blank' href='https://github.com/DarlanSchwartz/Webcam_test'>Repository link</a> </span>
     </PageContainer>
   )
 }
@@ -73,17 +75,32 @@ const PageContainer = styled.div`
   height: 100%;
   gap:30px;
   background-color: #313131;
+  font-family: 'Courier New', Courier, monospace;
+
+  a{
+    color: #3e93f3;
+  }
+
+  span{
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
 
   .actions-div{
 
         display: flex;
         gap: 30px;
+        
 
         button{
         border: 1px solid white;
         color :white;
         border-radius: 5px;
         background-color: #363636;
+        font-family: 'Courier New', Courier, monospace;
         width: auto;
         height: 30px;
         font-size: 20px;
